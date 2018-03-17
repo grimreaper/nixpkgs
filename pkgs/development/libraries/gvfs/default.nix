@@ -46,7 +46,7 @@ stdenv.mkDerivation rec {
     "-Dgio_module_dir=lib/gio/modules/"
     "-Dsystemduserunitdir=lib/systemd/user/"
     "-Ddbus_service_dir=share/dbus-1/services/"
-    "-Dtmpfilesdir='no'"
+    "-Dtmpfilesdir=no"
   ] ++ stdenv.lib.optionals (!gnomeSupport) [
     "-Dgcr=false" "-Dgoa=false" "-Dkeyring=false" "-Dhttp=false"
     "-Dgoogle=false"
