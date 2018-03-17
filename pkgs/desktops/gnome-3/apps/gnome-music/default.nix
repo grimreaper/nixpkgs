@@ -6,13 +6,13 @@
 
 python3.pkgs.buildPythonApplication rec {
   pname = "gnome-music";
-  version = "3.28.0";
+  version = "3.28.0.1";
 
   format = "other";
 
   src = fetchurl {
     url = "mirror://gnome/sources/${pname}/${gnome3.versionBranch version}/${pname}-${version}.tar.xz";
-    sha256 = "1sijldra375j8qdxqazrhbqqf1hkgsjwnnd8lmjldwswhfmllp8x";
+    sha256 = "0yyysmxwmk167n8wghcbmxz73kgl1y1j9js3mgkjjqsmkd9brk65";
   };
 
   nativeBuildInputs = [ meson ninja gettext itstool pkgconfig libxml2 wrapGAppsHook desktop-file-utils appstream-glib gobjectIntrospection ];
